@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caden's Portfolio</title>
+    <style>
+        body{
+            background-color: grey;
+            font-family: "Poppins", sans-serif;
+        }
+        h1{
+            text-align: center;
+            
+        }
+        .grid{
+            display: flex;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 7px;
+            padding: 5px;
+            grid-auto-rows: auto;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .item{
+            background-color: rgb(74, 153, 163);
+            box-shadow: 3px 3px grey;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            max-height: 100%;
+            width: 20%;
+        }
+        .item:hover {
+        transform:scale(1.05)
+      }
+      .clickable{
+        background-color: seashell ;
+        border-radius: 5px;
+      }
+      button:hover{
+        color: white;
+        background-color: cadetblue;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+    
+    }
+    @media (max-width: 768px) {
+           .grid{
+           /* grid-template-columns: repeat(1, 1fr); */
+           flex-direction: column;
+           }
+           .item{
+            width: 100%;
+           }
+         
+        }
+    </style>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<body>
+    
+    <div class="grid">
+        <div class="item">
+            <a href="aboutMe.html" class="button">About Me!</a>
+        </div>
+        <div class="item">
+            <a href="contactMe.html" class="button">Contact Me!</a>
+        </div>
+        <div class=" item">
+            <a href="hobbies.html" class="button">My Hobbies!</a>
+        </div>
+    </div>
+    <br>
+    <h1> Caden's CS 170 Portfolio</h1>
+    <hr>
+    <h2>Assignments</h2>
+    <p>Over the course of the semester, I completed 5 homework assignments</p>
+    <p>Here, I have them on display:</p>
+    <div>
+        <button class="clickable"><a href="HW1/HW1.html"> Homework assignment 1</a></button>
+    </div>
+    <br>
+    <div>
+        <button class="clickable"><a href="HW2/HW2/HW2.html"> Homework assignment 2</a></button>
+    </div>
+    <br>
+    <div>
+       <button class="clickable"><a href="HW3/index.html"> Homework assignment 3</a></button> 
+    </div>
+    <br>
+    <div>
+        <button class="clickable"><a href="HW4/index.html"> Homework assignment 4</a></button>
+    </div>
+    <br>
+    <div>
+        <button class="clickable"><a href="HW5/index.html"> Homework assignment 5</a></button>
+    </div>
+    <script>
+        alert("Welcome to my portfolio! Make sure to take a look around!")
+        console.log("I caught you peeking at my code!")
+        
+    </script>
+</body>
+</html>

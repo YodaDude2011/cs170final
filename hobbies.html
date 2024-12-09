@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <style>
+                body{
+            background-color: grey;
+            font-family: "Poppins", sans-serif;
+        }
+        h1{
+            text-align: center;
+            
+        }
+        .grid{
+            display: flex;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 7px;
+            padding: 5px;
+            grid-auto-rows: auto;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            
+        
+        }
+        .item{
+            background-color: rgb(74, 153, 163);
+            box-shadow: 3px 3px grey;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            max-height: 100%;
+            width: 20%;
+        }
+        .item:hover {
+        transform:scale(1.05)
+      }
+      .clickable{
+        background-color: seashell ;
+        border-radius: 5px;
+      }
+      button:hover{
+        color: white;
+        background-color: cadetblue;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+    
+    }
+    @media (max-width: 768px) {
+           .grid{
+           /* grid-template-columns: repeat(1, 1fr); */
+           flex-direction: column;
+           }
+           .item{
+            width: 100%;
+           }
+         
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">
+            <a href="index.html" class="button">Homepage</a>
+        </div>
+        <div class="item">
+            <a href="aboutMe.html" class="button">About Me</a>
+        </div>
+        <div class="item">
+            <a href="contactMe.html" class="button">Contact Me</a>
+        </div>
+        <div class=" item">
+            <a href="hobbies.html" class="button">My Hobbies</a>
+        </div>
+    </div>
+    <h1>My Hobbies</h1>
+    <hr>
+    <p>My hobbies include lots of things, I enjoy playing video games, working on cars, and building computers.</p>
+    <video width="320" height="240" controls src="/images/computer.mp4"> My Gaming Computer</video>
+    <p> This is my custom built gaming computer</p>
+    <br>
+    <img width="300" height="400" src="/images/car.jpg" alt="My old Mustang">
+    <p>This is my old Mustang, I was building it to be a racecar but it broke down I had to sell it.</p>
+   
+    <script>
+        console.log("(*-*)")
+        console.log(" /|\\ ")
+        console.log("  |")
+        console.log(" /\\ ")
+    </script>
+</body>
+</html>

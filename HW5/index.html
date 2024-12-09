@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Server Rental</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+            grid-auto-rows: auto;
+            height: 100%;
+        }
+        .grid button:hover { 
+            background-color: #0056b3; 
+            color: white;
+        }
+            
+      .item:hover {
+        transform:scale(1.05)
+      }
+        .item{
+            background-color: white;
+            /* border: 2px solid black; */
+            box-shadow: 3px 3px grey;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            max-height: 100%;
+            
+        }
+
+        @media (max-width: 768px) {
+           .grid{
+            grid-template-columns: repeat(1, 1fr);
+           }
+         
+        }
+     
+        h1{
+            font-weight: bold;
+            text-align: center;
+        }
+        .desc_text{
+            font-weight: lighter;
+            text-align: center;
+            color: grey;
+        }
+        .button{
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Our Different Features</h1>
+    <div class="grid">
+        <div class="item">
+            <b>Basic Plan</b> 
+            <div class="desc_text">
+                For up to 10 players
+            </div>
+            <br>
+             2GB of ram
+             <br>
+            1 CPU Core 
+            <br>
+            16GB of Storage
+            <br>
+            <button type="button" class="button">Choose Plan</button>
+        </div>
+        <div class="item">
+            <b>Recommended Plan</b>
+            <div class="desc_text">
+                 For up to 20 players, with minor mods
+            </div>
+            <br>
+            6GB of ram
+            <br>
+            2 CPU Cores
+            <br>
+            32GB of Storage
+            <br>
+            <button type="button" class="button">Choose Plan</button>
+        </div>
+        <div class="item">
+            <b>Custom Plan</b>
+            <div class="desc_text">
+                Customizable for your unique playerbase
+            </div>
+            <br>
+            Choose your amount of ram
+            <br>
+            Choose between 2-8 CPU Cores
+            <br>
+            Up to 1TB of NVME Storage
+            <br>
+            <button type="button" class="button">Choose Plan</button>
+
+        </div>
+    </div>
+</body>
+</html>
